@@ -6,5 +6,69 @@ namespace Ejercicio3
         {
             InitializeComponent();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Sure you want to close the program?", "My App",
+           MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+            == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+            Form2 f2 = new Form2();
+            f2.Close();
+
+        }
+
+        private void btnImage_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "png files (*.png)|*.png|All files (*.*)|*.*| jpg files(*.jpg)|*.jpg";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+                }
+            }
+
+            if (MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK) == DialogResult.OK)
+            {
+                Form2 f2 = new Form2();
+                Image newImage = Image.FromFile(filePath);
+
+                f2.FormImage = newImage;
+                this.Hide();
+                f2.Show();
+            }
+        }
+
+
+        private void cbModal_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (cbModal.Checked)
+            {
+                cbModal.ForeColor = Color.Red;
+            } 
+            else
+            {
+                cbModal.ForeColor = Color.Black;
+            }
+        }
     }
 }
