@@ -14,6 +14,7 @@ namespace Ejercicio3
     public partial class Form2 : Form
     {
         Image formImage;
+        string filePath;
 
         public Image FormImage
         {
@@ -22,26 +23,32 @@ namespace Ejercicio3
                 formImage = value;
             }
         }
+
+        public string FilePath
+        {
+            set
+            {
+                filePath = value;
+            }
+        }
+
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
         }
 
 
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            FileInfo fi = new FileInfo(filePath);
+            var name = fi.Name;
+
             pbImage.Image = formImage;
+            Text = name;
             this.Height = pbImage.Height;
             this.Width = pbImage.Width;
-            Text = Path.GetFileName(formImage.ToString());
+
 
         }
 
