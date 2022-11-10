@@ -14,6 +14,7 @@ namespace Ejercicio3
     public partial class Form2 : Form
     {
         Image formImage;
+        string filePath;
 
         public Image FormImage
         {
@@ -22,29 +23,39 @@ namespace Ejercicio3
                 formImage = value;
             }
         }
+
+        public string FilePath
+        {
+            set
+            {
+                filePath = value;
+            }
+        }
+
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
         }
 
 
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            FileInfo fi = new FileInfo(filePath);
+
             pbImage.Image = formImage;
-            this.Height = pbImage.Height;
-            this.Width = pbImage.Width;
-            Text = Path.GetFileName(formImage.ToString());
+            Text = fi.Name;
 
         }
 
-
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Sure you want to close the program?", "My App",
+           MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+            == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

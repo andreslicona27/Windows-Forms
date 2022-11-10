@@ -37,6 +37,7 @@ namespace Ejercicio3
                     //Get the path of specified file
                     filePath = openFileDialog.FileName;
 
+                    // // // This is to read a file in case its a text file
                     //Read the contents of the file into a stream
                     var fileStream = openFileDialog.OpenFile();
 
@@ -50,11 +51,32 @@ namespace Ejercicio3
             if (MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK) == DialogResult.OK)
             {
                 Form2 f2 = new Form2();
-                Image newImage = Image.FromFile(filePath);
+                try
+                {
+                    Image newImage = Image.FromFile(filePath);
 
-                f2.FormImage = newImage;
-                this.Hide();
-                f2.Show();
+                    f2.FormImage = newImage;
+                    f2.FilePath = filePath;
+
+                    if (!cbModal.Checked)
+                    {
+                        f2.Show();
+                    }
+                    else
+                    {
+                        DialogResult res;
+                        res = f2.ShowDialog();
+                    }
+                }
+                catch (ArgumentException)
+                {
+                    MessageBox.Show("You have to choose an image", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (OutOfMemoryException)
+                {
+                    MessageBox.Show("I can´t show that path", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
         }
 
@@ -64,7 +86,7 @@ namespace Ejercicio3
             if (cbModal.Checked)
             {
                 cbModal.ForeColor = Color.Red;
-            } 
+            }
             else
             {
                 cbModal.ForeColor = Color.Black;
