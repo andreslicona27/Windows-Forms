@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andres\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
+      "projectUniqueName": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
       "projectName": "Ejercicio3",
-      "projectPath": "C:\\Users\\Andres\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
+      "projectPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
       "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andres\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\",
+      "outputPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
