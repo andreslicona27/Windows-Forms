@@ -46,7 +46,7 @@
             this.tbUno.Name = "tbUno";
             this.tbUno.Size = new System.Drawing.Size(100, 23);
             this.tbUno.TabIndex = 0;
-            this.tbUno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tvUno_KeyPress);
+            this.tbUno.TextChanged += new System.EventHandler(this.tb_TextChanged);
             // 
             // tbDos
             // 
@@ -54,7 +54,7 @@
             this.tbDos.Name = "tbDos";
             this.tbDos.Size = new System.Drawing.Size(100, 23);
             this.tbDos.TabIndex = 1;
-            this.tbDos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tvUno_KeyPress);
+            this.tbDos.TextChanged += new System.EventHandler(this.tb_TextChanged);
             // 
             // btnOperation
             // 
@@ -120,7 +120,7 @@
             this.lblOperation.Location = new System.Drawing.Point(135, 34);
             this.lblOperation.Name = "lblOperation";
             this.lblOperation.Size = new System.Drawing.Size(0, 15);
-            this.lblOperation.TabIndex = 0;
+            this.lblOperation.TabIndex = 7;
             // 
             // lblResult
             // 

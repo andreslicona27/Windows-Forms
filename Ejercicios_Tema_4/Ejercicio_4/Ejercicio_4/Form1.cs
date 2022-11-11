@@ -1,13 +1,29 @@
 using System.Buffers;
 using System.Collections;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Ejercicio_4
 {
     public partial class Form1 : Form
     {
+        public Timer timer = new Timer();
+        public int minTime = 0;
+        public int secTime = 0;
         public Form1()
         {
             InitializeComponent();
+
+            timer.Start();
+            timer.Interval = (int)(1000);
+
+            Text = String.Format("Claculator {0,2}:{1,2}", minTime, secTime);
+            minTime++;
+            if (minTime > 60)
+            {
+                minTime = 0;
+                secTime++;
+            }
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -18,6 +34,7 @@ namespace Ejercicio_4
             {
                 e.Cancel = true;
             }
+            timer.Stop();
         }
 
         private void radioButton_CheckedChanged(object sender, EventArgs e)
@@ -55,19 +72,20 @@ namespace Ejercicio_4
             {
 
             }
-
-
         }
 
-        private void tvUno_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void tb_TextChanged(object sender, EventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            string number = ((TextBox)sender).Text.Trim();
+            double result;
+            if (double.TryParse(number, out result) || number.Equals(""))
             {
-                ((TextBox)sender).BackColor = Color.Red;
+                ((TextBox)sender).BackColor = Color.White;
             }
             else
             {
-                ((TextBox)sender).BackColor = Color.White;
+                ((TextBox)sender).BackColor = Color.Red;
             }
         }
     }
