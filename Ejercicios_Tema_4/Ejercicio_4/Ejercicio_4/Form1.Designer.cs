@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbUno = new System.Windows.Forms.TextBox();
             this.tbDos = new System.Windows.Forms.TextBox();
@@ -38,6 +39,7 @@
             this.rbDivision = new System.Windows.Forms.RadioButton();
             this.lblOperation = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // tbUno
@@ -131,6 +133,12 @@
             this.lblResult.TabIndex = 7;
             this.lblResult.Text = "=";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnOperation;
@@ -166,5 +174,6 @@
         private RadioButton rbDivision;
         private Label lblOperation;
         private Label lblResult;
+        private System.Windows.Forms.Timer timer1;
     }
 }
