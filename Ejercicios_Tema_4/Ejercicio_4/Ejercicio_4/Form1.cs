@@ -53,14 +53,17 @@ namespace Ejercicio_4
             if (evaluateNumber1 == true || evaluateNumber2 == true || tbUno.Text.Equals("") || tbDos.Text.Equals(""))
             {
                 MessageBox.Show("You have to put numbers in both boxes", "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblResult.Text = "=";
+            }
+            else if (num1 == 0 && num2 == 0 && lblOperation.Text.Equals("/"))
+            {
+                MessageBox.Show("You can´t do that type of operation", "Arithmetic Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblResult.Text = "=";
             }
             else
             {
                 operationsTable[lblOperation.Text](num1, num2);
-
             }
-
-
         }
 
         private void tb_TextChanged(object sender, EventArgs e)
