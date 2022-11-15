@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbOne = new System.Windows.Forms.ListBox();
             this.lbTwo = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.tbElement = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbOne
@@ -82,12 +84,13 @@
             // 
             // btnTransferTwo
             // 
-            this.btnTransferTwo.Location = new System.Drawing.Point(23, 206);
+            this.btnTransferTwo.Location = new System.Drawing.Point(24, 207);
             this.btnTransferTwo.Name = "btnTransferTwo";
             this.btnTransferTwo.Size = new System.Drawing.Size(138, 23);
             this.btnTransferTwo.TabIndex = 5;
-            this.btnTransferTwo.Text = "Transfer List Two";
+            this.btnTransferTwo.Text = "Transfer to List Two";
             this.btnTransferTwo.UseVisualStyleBackColor = true;
+            this.btnTransferTwo.Click += new System.EventHandler(this.btnTransferTwo_Click);
             // 
             // btnTransferOne
             // 
@@ -95,8 +98,9 @@
             this.btnTransferOne.Name = "btnTransferOne";
             this.btnTransferOne.Size = new System.Drawing.Size(138, 23);
             this.btnTransferOne.TabIndex = 4;
-            this.btnTransferOne.Text = "Transfer List One";
+            this.btnTransferOne.Text = "Transfer to List One";
             this.btnTransferOne.UseVisualStyleBackColor = true;
+            this.btnTransferOne.Click += new System.EventHandler(this.btnTransferOne_Click);
             // 
             // lblNumElementos
             // 
@@ -141,6 +145,12 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "List Two";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -158,7 +168,7 @@
             this.Controls.Add(this.lbTwo);
             this.Controls.Add(this.lbOne);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ejercicio 5 ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +187,6 @@
         private TextBox tbElement;
         private Label label1;
         private Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
