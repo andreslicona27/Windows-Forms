@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andres Licona\\.nuget\\packages\\": {}
+    "C:\\Users\\Andres\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_1_v2\\Ejercicio_1_v2\\Ejercicio_1_v2.csproj",
+      "projectUniqueName": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_1\\Ejercicio_1_v2\\Ejercicio_1_v2.csproj",
       "projectName": "Ejercicio_1_v2",
-      "projectPath": "E:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_1_v2\\Ejercicio_1_v2\\Ejercicio_1_v2.csproj",
-      "packagesPath": "C:\\Users\\Andres Licona\\.nuget\\packages\\",
-      "outputPath": "E:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_1_v2\\Ejercicio_1_v2\\obj\\",
+      "projectPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_1\\Ejercicio_1_v2\\Ejercicio_1_v2.csproj",
+      "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_1\\Ejercicio_1_v2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andres Licona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

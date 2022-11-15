@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\Ejercicio_2.csproj",
+      "projectUniqueName": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\Ejercicio_2.csproj",
       "projectName": "Ejercicio_2",
-      "projectPath": "H:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\Ejercicio_2.csproj",
+      "projectPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\Ejercicio_2.csproj",
       "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-      "outputPath": "H:\\DAM\\Segundo Año\\Desenvolvimiento de Interfaces\\Trimestre_1\\Tema 4\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\obj\\",
+      "outputPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_2\\Ejercicio_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -72,6 +72,10 @@ namespace Ejercicio3
                 {
                     MessageBox.Show("You have to choose an image", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                catch (OutOfMemoryException)
+                {
+                    MessageBox.Show("I can´t show that path", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
         }

@@ -42,16 +42,20 @@ namespace Ejercicio3
         private void Form2_Load(object sender, EventArgs e)
         {
             FileInfo fi = new FileInfo(filePath);
-            var name = fi.Name;
 
             pbImage.Image = formImage;
-            Text = name;
-            this.Height = pbImage.Height;
-            this.Width = pbImage.Width;
-
+            Text = fi.Name;
 
         }
 
-
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Sure you want to close the program?", "My App",
+           MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+            == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

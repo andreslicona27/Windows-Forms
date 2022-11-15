@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andres Licona\\.nuget\\packages\\": {}
+    "C:\\Users\\Andres\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
+      "projectUniqueName": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
       "projectName": "Ejercicio3",
-      "projectPath": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
-      "packagesPath": "C:\\Users\\Andres Licona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\",
+      "projectPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
+      "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andres Licona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,5 +67,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

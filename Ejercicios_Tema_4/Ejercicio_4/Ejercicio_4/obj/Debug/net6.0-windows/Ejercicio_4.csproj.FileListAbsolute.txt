@@ -1,0 +1,17 @@
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\bin\Debug\net6.0-windows\Ejercicio_4.exe
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\bin\Debug\net6.0-windows\Ejercicio_4.deps.json
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\bin\Debug\net6.0-windows\Ejercicio_4.runtimeconfig.json
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\bin\Debug\net6.0-windows\Ejercicio_4.dll
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\bin\Debug\net6.0-windows\Ejercicio_4.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.Form1.resources
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.AssemblyInfoInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.AssemblyInfo.cs
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.dll
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\refint\Ejercicio_4.dll
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\Ejercicio_4.genruntimeconfig.cache
+C:\Users\Andres\Vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_4\Ejercicio_4\obj\Debug\net6.0-windows\ref\Ejercicio_4.dll
