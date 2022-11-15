@@ -71,6 +71,7 @@
             // rbAddition
             // 
             this.rbAddition.AutoSize = true;
+            this.rbAddition.Checked = true;
             this.rbAddition.Location = new System.Drawing.Point(29, 66);
             this.rbAddition.Name = "rbAddition";
             this.rbAddition.Size = new System.Drawing.Size(33, 19);
@@ -87,7 +88,6 @@
             this.rbSubtraction.Name = "rbSubtraction";
             this.rbSubtraction.Size = new System.Drawing.Size(30, 19);
             this.rbSubtraction.TabIndex = 4;
-            this.rbSubtraction.TabStop = true;
             this.rbSubtraction.Text = "-";
             this.rbSubtraction.UseVisualStyleBackColor = true;
             this.rbSubtraction.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -99,7 +99,6 @@
             this.rbMultiplication.Name = "rbMultiplication";
             this.rbMultiplication.Size = new System.Drawing.Size(30, 19);
             this.rbMultiplication.TabIndex = 3;
-            this.rbMultiplication.TabStop = true;
             this.rbMultiplication.Text = "*";
             this.rbMultiplication.UseVisualStyleBackColor = true;
             this.rbMultiplication.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -111,7 +110,6 @@
             this.rbDivision.Name = "rbDivision";
             this.rbDivision.Size = new System.Drawing.Size(30, 19);
             this.rbDivision.TabIndex = 5;
-            this.rbDivision.TabStop = true;
             this.rbDivision.Text = "/";
             this.rbDivision.UseVisualStyleBackColor = true;
             this.rbDivision.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -123,6 +121,7 @@
             this.lblOperation.Name = "lblOperation";
             this.lblOperation.Size = new System.Drawing.Size(0, 15);
             this.lblOperation.TabIndex = 7;
+            this.lblOperation.Text = "+";
             // 
             // lblResult
             // 
