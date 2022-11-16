@@ -35,8 +35,8 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnTransferTwo = new System.Windows.Forms.Button();
             this.btnTransferOne = new System.Windows.Forms.Button();
-            this.lblNumElementos = new System.Windows.Forms.Label();
-            this.lblIndice = new System.Windows.Forms.Label();
+            this.lblNumElements = new System.Windows.Forms.Label();
+            this.lblIndex = new System.Windows.Forms.Label();
             this.tbElement = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.lbOne.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbOne.Size = new System.Drawing.Size(120, 199);
             this.lbOne.TabIndex = 0;
+            this.lbOne.SelectedIndexChanged += new System.EventHandler(this.lbOne_SelectedIndexChanged);
             // 
             // lbTwo
             // 
@@ -60,7 +61,7 @@
             this.lbTwo.Location = new System.Drawing.Point(327, 33);
             this.lbTwo.Name = "lbTwo";
             this.lbTwo.Size = new System.Drawing.Size(120, 199);
-            this.lbTwo.TabIndex = 1;
+            this.lbTwo.TabIndex = 0;
             // 
             // btnAdd
             // 
@@ -102,30 +103,30 @@
             this.btnTransferOne.UseVisualStyleBackColor = true;
             this.btnTransferOne.Click += new System.EventHandler(this.btnTransferOne_Click);
             // 
-            // lblNumElementos
+            // lblNumElements
             // 
-            this.lblNumElementos.AutoSize = true;
-            this.lblNumElementos.Location = new System.Drawing.Point(23, 33);
-            this.lblNumElementos.Name = "lblNumElementos";
-            this.lblNumElementos.Size = new System.Drawing.Size(79, 15);
-            this.lblNumElementos.TabIndex = 6;
-            this.lblNumElementos.Text = "Elts in list one";
+            this.lblNumElements.AutoSize = true;
+            this.lblNumElements.Location = new System.Drawing.Point(23, 33);
+            this.lblNumElements.Name = "lblNumElements";
+            this.lblNumElements.Size = new System.Drawing.Size(79, 15);
+            this.lblNumElements.TabIndex = 0;
+            this.lblNumElements.Text = "Elts in list one";
             // 
-            // lblIndice
+            // lblIndex
             // 
-            this.lblIndice.AutoSize = true;
-            this.lblIndice.Location = new System.Drawing.Point(23, 62);
-            this.lblIndice.Name = "lblIndice";
-            this.lblIndice.Size = new System.Drawing.Size(96, 15);
-            this.lblIndice.TabIndex = 7;
-            this.lblIndice.Text = "Index of element";
+            this.lblIndex.AutoSize = true;
+            this.lblIndex.Location = new System.Drawing.Point(23, 62);
+            this.lblIndex.Name = "lblIndex";
+            this.lblIndex.Size = new System.Drawing.Size(96, 15);
+            this.lblIndex.TabIndex = 0;
+            this.lblIndex.Text = "Index of element";
             // 
             // tbElement
             // 
             this.tbElement.Location = new System.Drawing.Point(23, 90);
             this.tbElement.Name = "tbElement";
             this.tbElement.Size = new System.Drawing.Size(138, 23);
-            this.tbElement.TabIndex = 8;
+            this.tbElement.TabIndex = 1;
             // 
             // label1
             // 
@@ -133,7 +134,7 @@
             this.label1.Location = new System.Drawing.Point(190, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 15);
-            this.label1.TabIndex = 9;
+            this.label1.TabIndex = 0;
             this.label1.Text = "List One";
             // 
             // label2
@@ -142,7 +143,7 @@
             this.label2.Location = new System.Drawing.Point(327, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 10;
+            this.label2.TabIndex = 0;
             this.label2.Text = "List Two";
             // 
             // timer1
@@ -159,8 +160,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbElement);
-            this.Controls.Add(this.lblIndice);
-            this.Controls.Add(this.lblNumElementos);
+            this.Controls.Add(this.lblIndex);
+            this.Controls.Add(this.lblNumElements);
             this.Controls.Add(this.btnTransferTwo);
             this.Controls.Add(this.btnTransferOne);
             this.Controls.Add(this.btnDelete);
@@ -182,8 +183,8 @@
         private Button btnDelete;
         private Button btnTransferTwo;
         private Button btnTransferOne;
-        private Label lblNumElementos;
-        private Label lblIndice;
+        private Label lblNumElements;
+        private Label lblIndex;
         private TextBox tbElement;
         private Label label1;
         private Label label2;
