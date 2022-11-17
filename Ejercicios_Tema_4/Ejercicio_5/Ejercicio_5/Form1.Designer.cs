@@ -40,7 +40,7 @@
             this.tbElement = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerText = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbOne
@@ -146,14 +146,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "List Two";
             // 
-            // timer1
+            // timerText
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timerText.Enabled = true;
+            this.timerText.Interval = 200;
+            this.timerText.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 254);
@@ -188,6 +189,6 @@
         private TextBox tbElement;
         private Label label1;
         private Label label2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerText;
     }
 }
