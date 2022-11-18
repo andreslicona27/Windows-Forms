@@ -25,10 +25,10 @@ namespace Ejercicio_5
             InitializeComponent();
             ttip.SetToolTip(this.btnAdd, "Add element at list one");
             ttip.SetToolTip(this.btnDelete, "Delete element at list one");
-            ttip.SetToolTip(this.btnTransferOne, "Transfer elements from list two to list one");
-            ttip.SetToolTip(this.btnTransferTwo, "Transfer elements from list one to list two");
+            ttip.SetToolTip(this.btnTransferOne, "Transfer elements from list two to list two");
+            ttip.SetToolTip(this.btnTransferTwo, "Transfer elements from list one to list one");
             ttip.SetToolTip(this.lbOne, "List numer one");
-            ttip.SetToolTip(this.lbTwo, "Elts in list two" + lbTwo.Items.Count.ToString());
+            ttip.SetToolTip(this.lbTwo, "Elts in list two " + lbTwo.Items.Count.ToString());
             ttip.SetToolTip(this.tbElement, "Write the elment you want to add");
             ttip.SetToolTip(this.lblNumElements, "Amount of elements in list one");
             ttip.SetToolTip(this.lblIndex, "Index of selected elements in list one");
@@ -62,17 +62,23 @@ namespace Ejercicio_5
 
         }
 
-        //lbOne.ClearSelected();
         private void btnTransferOne_Click(object sender, EventArgs e)
         {
             if (lbOne.Items.Count > 0 && lbOne.SelectedIndex > 0)
             {
-                string element = lbTwo.SelectedItem.ToString();
-                if (!variableRepeated(lbTwo, element))
+                while (lbOne.SelectedIndices.Count > 0)
                 {
-                    lbOne.Items.Add(lbTwo.SelectedItem.ToString());
-                    lbTwo.Items.Remove(lbTwo.SelectedItem);
-                    lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
+                    for (int i = 0; i < lbOne.SelectedIndices.Count; i++)
+                    //for (int i = lbOne.SelectedIndices.Count; i >= 0; i--)
+                    {
+                        if (!variableRepeated(lbTwo, lbOne.SelectedItems[i].ToString()))
+                        {
+                            //lbTwo.Items.Add(lbOne.SelectedItems[i]);
+                            lbTwo.Items.Insert(0, lbOne.SelectedItems[i]);
+                        }
+                            lbOne.Items.Remove(lbOne.SelectedItems[i]);
+                            lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
+                    }
                 }
 
             }
@@ -81,16 +87,13 @@ namespace Ejercicio_5
 
         private void btnTransferTwo_Click(object sender, EventArgs e)
         {
-            if (lbOne.Items.Count > 0 && lbOne.SelectedIndex > 0)
+            if (lbTwo.Items.Count > 0 && lbTwo.SelectedIndex > 0)
             {
-                for (int i = 0; i <= lbOne.SelectedItems.Count - 1; i++)
+                if (!variableRepeated(lbOne, lbTwo.SelectedItem.ToString()))
                 {
-                    if (!variableRepeated(lbTwo, lbOne.SelectedItems[i].ToString()))
-                    {
-                        lbTwo.Items.Add(lbOne.SelectedItems[i]);
-                        lbOne.Items.Remove(lbOne.SelectedItems[i]);
-                        lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
-                    }
+                    lbOne.Items.Add(lbTwo.SelectedItem);
+                    lbTwo.Items.Remove(lbTwo.SelectedItem);
+                    lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
                 }
 
             }
@@ -102,7 +105,7 @@ namespace Ejercicio_5
             int cont = 9;
             string title = "Exercise 5";
             string titleText = title;
-            string title3;
+            string titleShowing; ;
             int maxPoints = title.Length;
 
             //Text = titleText.Substring(0, maxPoints);
@@ -112,11 +115,11 @@ namespace Ejercicio_5
             }
             else
             {
-                title3 = titleText[cont] + Text;
-                if (title3.Length >= cont)
+                titleShowing = titleText[cont] + Text;
+                if (titleShowing.Length >= cont)
                 {
-                    title3 = title3.Substring(0, cont);
-                    Text = title3;
+                    titleShowing = titleShowing.Substring(0, cont);
+                    Text = titleShowing;
                 }
                 else
                 {

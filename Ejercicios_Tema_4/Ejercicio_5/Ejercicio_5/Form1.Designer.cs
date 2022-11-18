@@ -89,7 +89,7 @@
             this.btnTransferTwo.Name = "btnTransferTwo";
             this.btnTransferTwo.Size = new System.Drawing.Size(138, 23);
             this.btnTransferTwo.TabIndex = 5;
-            this.btnTransferTwo.Text = "Transfer to List Two";
+            this.btnTransferTwo.Text = "Transfer to List One";
             this.btnTransferTwo.UseVisualStyleBackColor = true;
             this.btnTransferTwo.Click += new System.EventHandler(this.btnTransferTwo_Click);
             // 
@@ -99,7 +99,7 @@
             this.btnTransferOne.Name = "btnTransferOne";
             this.btnTransferOne.Size = new System.Drawing.Size(138, 23);
             this.btnTransferOne.TabIndex = 4;
-            this.btnTransferOne.Text = "Transfer to List One";
+            this.btnTransferOne.Text = "Transfer to List Two";
             this.btnTransferOne.UseVisualStyleBackColor = true;
             this.btnTransferOne.Click += new System.EventHandler(this.btnTransferOne_Click);
             // 
