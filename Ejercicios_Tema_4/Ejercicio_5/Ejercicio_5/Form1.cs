@@ -1,4 +1,5 @@
 using System.Reflection.Emit;
+using System.Runtime.Versioning;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ToolTip = System.Windows.Forms.ToolTip;
@@ -28,7 +29,6 @@ namespace Ejercicio_5
             ttip.SetToolTip(this.btnTransferOne, "Transfer elements from list two to list two");
             ttip.SetToolTip(this.btnTransferTwo, "Transfer elements from list one to list one");
             ttip.SetToolTip(this.lbOne, "List numer one");
-            ttip.SetToolTip(this.lbTwo, "Elts in list two " + lbTwo.Items.Count.ToString());
             ttip.SetToolTip(this.tbElement, "Write the elment you want to add");
             ttip.SetToolTip(this.lblNumElements, "Amount of elements in list one");
             ttip.SetToolTip(this.lblIndex, "Index of selected elements in list one");
@@ -64,30 +64,24 @@ namespace Ejercicio_5
 
         private void btnTransferOne_Click(object sender, EventArgs e)
         {
-            if (lbOne.Items.Count > 0 && lbOne.SelectedIndex > 0)
+            if (lbOne.Items.Count > 0 && lbOne.SelectedItems.Count > 0)
             {
-                while (lbOne.SelectedIndices.Count > 0)
+                for (int i = lbOne.SelectedItems.Count - 1; i >= 0; i--)
                 {
-                    for (int i = 0; i < lbOne.SelectedIndices.Count; i++)
-                    //for (int i = lbOne.SelectedIndices.Count; i >= 0; i--)
+                    if (!variableRepeated(lbTwo, lbOne.SelectedItems[i].ToString()))
                     {
-                        if (!variableRepeated(lbTwo, lbOne.SelectedItems[i].ToString()))
-                        {
-                            //lbTwo.Items.Add(lbOne.SelectedItems[i]);
-                            lbTwo.Items.Insert(0, lbOne.SelectedItems[i]);
-                        }
-                            lbOne.Items.Remove(lbOne.SelectedItems[i]);
-                            lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
+                        lbTwo.Items.Insert(0, lbOne.SelectedItems[i]);
+                        lbOne.Items.Remove(lbOne.SelectedItems[i]);
                     }
                 }
-
+                lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
             }
-
+            ttip.SetToolTip(this.lbTwo, "Elts in list two " + lbTwo.Items.Count.ToString());
         }
 
         private void btnTransferTwo_Click(object sender, EventArgs e)
         {
-            if (lbTwo.Items.Count > 0 && lbTwo.SelectedIndex > 0)
+            if (lbTwo.Items.Count > 0 && lbTwo.SelectedItems.Count > 0)
             {
                 if (!variableRepeated(lbOne, lbTwo.SelectedItem.ToString()))
                 {
@@ -97,35 +91,30 @@ namespace Ejercicio_5
                 }
 
             }
-
+            ttip.SetToolTip(this.lbTwo, "Elts in list two " + lbTwo.Items.Count.ToString());
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int cont = 9;
             string title = "Exercise 5";
+            int cont = title.Length - 1;
             string titleText = title;
             string titleShowing; ;
-            int maxPoints = title.Length;
+            //this.Icon = cont % 2 == 0 ? Dependencias.Icons.Icon1 : Dependencias.Icons.Icon2;
 
-            //Text = titleText.Substring(0, maxPoints);
             if (cont <= 0)
             {
-                cont = titleText.Length - 1;
+                cont = title.Length - 1;
             }
             else
             {
                 titleShowing = titleText[cont] + Text;
-                if (titleShowing.Length >= cont)
+                if (titleShowing.Length >= 10)
                 {
-                    titleShowing = titleShowing.Substring(0, cont);
-                    Text = titleShowing;
+                    Text = titleShowing.Substring(0, 10);
                 }
-                else
-                {
-                    Text = " ";
-                    cont--;
-                }
+                cont--;
+                Text = titleShowing;
             }
 
         }

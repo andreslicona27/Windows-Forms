@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj": {}
+    "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj": {
+    "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj",
+        "projectUniqueName": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj",
         "projectName": "Ejercicio_5",
-        "projectPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj",
-        "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\obj\\",
+        "projectPath": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\Ejercicio_5.csproj",
+        "packagesPath": "C:\\Users\\Andres Licona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_5\\Ejercicio_5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andres Licona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
