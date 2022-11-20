@@ -64,7 +64,7 @@
             this.txtbRojo.Name = "txtbRojo";
             this.txtbRojo.Size = new System.Drawing.Size(70, 23);
             this.txtbRojo.TabIndex = 0;
-            this.txtbRojo.CursorChanged += new System.EventHandler(this.txtbRojo_CursorChanged);
+            this.txtbRojo.Enter += new System.EventHandler(this.txtbRojo_Enter);
             // 
             // txtbAzul
             // 
@@ -72,6 +72,7 @@
             this.txtbAzul.Name = "txtbAzul";
             this.txtbAzul.Size = new System.Drawing.Size(70, 23);
             this.txtbAzul.TabIndex = 2;
+            this.txtbAzul.Enter += new System.EventHandler(this.txtbRojo_Enter);
             // 
             // txtbVerde
             // 
@@ -79,6 +80,7 @@
             this.txtbVerde.Name = "txtbVerde";
             this.txtbVerde.Size = new System.Drawing.Size(70, 23);
             this.txtbVerde.TabIndex = 1;
+            this.txtbVerde.Enter += new System.EventHandler(this.txtbRojo_Enter);
             // 
             // btnColor
             // 
@@ -98,6 +100,7 @@
             this.txtbRuta.Name = "txtbRuta";
             this.txtbRuta.Size = new System.Drawing.Size(218, 23);
             this.txtbRuta.TabIndex = 4;
+            this.txtbRuta.Enter += new System.EventHandler(this.txtbRojo_Enter);
             // 
             // btnImagen
             // 
@@ -170,6 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnSalir;
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.pb);
             this.Controls.Add(this.label5);
@@ -195,8 +199,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
+s            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

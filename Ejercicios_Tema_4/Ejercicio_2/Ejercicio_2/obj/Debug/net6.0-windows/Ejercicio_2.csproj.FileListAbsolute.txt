@@ -32,3 +32,20 @@ E:\DAM\Segundo Año\Desenvolvimiento de Interfaces\Trimestre_1\Tema 4\Ejercicios
 E:\DAM\Segundo Año\Desenvolvimiento de Interfaces\Trimestre_1\Tema 4\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.genruntimeconfig.cache
 E:\DAM\Segundo Año\Desenvolvimiento de Interfaces\Trimestre_1\Tema 4\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\ref\Ejercicio_2.dll
 H:\DAM\Segundo Año\Desenvolvimiento de Interfaces\Trimestre_1\Tema 4\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.Ejericio_2.resources
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\bin\Debug\net6.0-windows\Ejercicio_2.exe
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\bin\Debug\net6.0-windows\Ejercicio_2.deps.json
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\bin\Debug\net6.0-windows\Ejercicio_2.runtimeconfig.json
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\bin\Debug\net6.0-windows\Ejercicio_2.dll
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\bin\Debug\net6.0-windows\Ejercicio_2.pdb
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.csproj.AssemblyReference.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.Ejericio_2.resources
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.csproj.GenerateResource.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.AssemblyInfoInputs.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.AssemblyInfo.cs
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.csproj.CoreCompileInputs.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.dll
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\refint\Ejercicio_2.dll
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.pdb
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\Ejercicio_2.genruntimeconfig.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Ejercicios_Tema_4\Ejercicio_2\Ejercicio_2\obj\Debug\net6.0-windows\ref\Ejercicio_2.dll

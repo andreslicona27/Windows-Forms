@@ -34,15 +34,6 @@ namespace Ejercicio_2
 
         }
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 27)
-            {
-                Application.Exit();
-            }
-        }
-
-
         private void btnColor_Click(object sender, EventArgs e)
         {
             try
@@ -63,6 +54,7 @@ namespace Ejercicio_2
             {
                 MessageBox.Show("Debes ingresar numeros en todos los campos", "Datos Incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void btnImagen_Click(object sender, EventArgs e)
@@ -80,6 +72,10 @@ namespace Ejercicio_2
             {
                 MessageBox.Show("No se ha encontrado esa imagen", "Datos Incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            catch (OutOfMemoryException)
+            {
+                MessageBox.Show("Ha ocurrido un error, intentalo con otra imagen", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Form1_MouseEnter(object sender, MouseEventArgs e)
@@ -92,18 +88,18 @@ namespace Ejercicio_2
             ((Button)sender).BackColor = Color.White;
         }
 
-        private void txtbRojo_CursorChanged(object sender, EventArgs e)
+        private void txtbRojo_Enter(object sender, EventArgs e)
         {
-            if (txtbRojo.Focused || txtbVerde.Focused || txtbAzul.Focused)
             {
-                AcceptButton = btnColor;
-            }
-            else if (txtbRuta.Focused)
-            {
-                AcceptButton = btnImagen;
+                if (((TextBox)sender) == txtbRojo || ((TextBox)sender) == txtbVerde || ((TextBox)sender) == txtbAzul)
+                {
+                    AcceptButton = btnColor;
+                }
+                else if (((TextBox)sender) == txtbRuta)
+                {
+                    AcceptButton = btnImagen;
+                }
             }
         }
-
-        
     }
 }
