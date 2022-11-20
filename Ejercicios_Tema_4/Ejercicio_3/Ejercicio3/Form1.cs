@@ -15,15 +15,13 @@ namespace Ejercicio3
             {
                 e.Cancel = true;
             }
-            Form2 f2 = new Form2();
-            f2.Close();
 
         }
 
         private void btnImage_Click(object sender, EventArgs e)
         {
-            var fileContent = string.Empty;
-            var filePath = string.Empty;
+            string fileContent = string.Empty;
+            string filePath = string.Empty;
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -34,24 +32,15 @@ namespace Ejercicio3
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
                     filePath = openFileDialog.FileName;
-
-                    // // // This is to read a file in case its a text file
-                    //Read the contents of the file into a stream
-                    var fileStream = openFileDialog.OpenFile();
-
-                    using (StreamReader reader = new StreamReader(fileStream))
-                    {
-                        fileContent = reader.ReadToEnd();
-                    }
+                    openFileDialog.OpenFile();
                 }
             }
 
-            if (MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK) == DialogResult.OK)
+            Form2 f2 = new Form2();
+            try
             {
-                Form2 f2 = new Form2();
-                try
+                if (filePath.Length > 0)
                 {
                     Image newImage = Image.FromFile(filePath);
 
@@ -68,16 +57,16 @@ namespace Ejercicio3
                         res = f2.ShowDialog();
                     }
                 }
-                catch (ArgumentException)
-                {
-                    MessageBox.Show("You have to choose an image", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                catch (OutOfMemoryException)
-                {
-                    MessageBox.Show("I can´t show that path", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
             }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("You have to choose an image", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (OutOfMemoryException)
+            {
+                MessageBox.Show("I can´t show that path", "Image Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
 

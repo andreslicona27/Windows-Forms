@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+k7sz96X3S67esZ1PQIcmzAwq9aXQtihMBtgrrY01m94U8CwEmBS3fWpegwBZhIY/29Vvno+4Fp34akKKzwMaQ==",
+  "dgSpecHash": "khxMn4gNqJelXs1NOC/EtN8WYo2w5RslLPlFgtidzRg4I4yb8MVBhGvGcn036zxfjmOJcoFmtCAUEnLqu2JRMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
+  "projectFilePath": "C:\\Users\\Andres Licona\\vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\Ejercicio3.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Andres\\Vivas\\Windows-Forms\\Ejercicios_Tema_4\\Ejercicio_3\\Ejercicio3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

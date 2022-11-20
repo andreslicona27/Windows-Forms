@@ -38,7 +38,7 @@
             this.pbImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbImage.Location = new System.Drawing.Point(1, -2);
+            this.pbImage.Location = new System.Drawing.Point(1, 1);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(799, 454);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
