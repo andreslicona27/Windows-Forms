@@ -49,19 +49,13 @@ namespace Ejercicio_1_v2
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (sender.GetType() == button1.GetType())
             {
-                button1.BackColor = Color.SteelBlue;
-
-            }
-            else if (e.Button == MouseButtons.Right)
-            {
-                button2.BackColor = Color.SteelBlue;
+                Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X + ((Button)sender).Location.X, e.Location.Y + ((Button)sender).Location.X);
             }
             else
             {
-                button1.BackColor = Color.SteelBlue;
-                button2.BackColor = Color.SteelBlue;
+                Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X, e.Location.Y);
             }
 
         }
