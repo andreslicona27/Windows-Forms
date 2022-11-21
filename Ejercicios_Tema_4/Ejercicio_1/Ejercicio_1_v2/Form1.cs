@@ -49,7 +49,7 @@ namespace Ejercicio_1_v2
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (sender.GetType() == button1.GetType())
+            if (sender is Button)
             {
                 Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X + ((Button)sender).Location.X, e.Location.Y + ((Button)sender).Location.X);
             }
