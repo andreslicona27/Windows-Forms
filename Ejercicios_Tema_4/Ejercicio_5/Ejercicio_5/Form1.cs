@@ -100,7 +100,7 @@ namespace Ejercicio_5
             int cont = title.Length - 1;
             string titleText = title;
             string titleShowing; ;
-            //this.Icon = cont % 2 == 0 ? Dependencias.Icons.Icon1 : Dependencias.Icons.Icon2;
+            //this.Icon = cont % 2 == 0 ? Resources.onBlack : Resources.onRed;
 
             if (cont <= 0)
             {
@@ -109,11 +109,11 @@ namespace Ejercicio_5
             else
             {
                 titleShowing = titleText[cont] + Text;
+                cont--;
                 if (titleShowing.Length >= 10)
                 {
                     Text = titleShowing.Substring(0, 10);
                 }
-                cont--;
                 Text = titleShowing;
             }
 
