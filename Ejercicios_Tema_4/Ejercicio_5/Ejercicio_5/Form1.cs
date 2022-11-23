@@ -100,7 +100,6 @@ namespace Ejercicio_5
             int cont = title.Length - 1;
             string titleText = title;
             string titleShowing; ;
-            //this.Icon = cont % 2 == 0 ? Resources.onBlack : Resources.onRed;
 
             if (cont <= 0)
             {
@@ -116,7 +115,6 @@ namespace Ejercicio_5
                 }
                 Text = titleShowing;
             }
-
         }
 
         private void lbOne_SelectedIndexChanged(object sender, EventArgs e)
