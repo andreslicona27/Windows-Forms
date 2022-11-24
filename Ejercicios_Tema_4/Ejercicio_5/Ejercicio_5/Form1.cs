@@ -32,11 +32,12 @@ namespace Ejercicio_5
             ttip.SetToolTip(this.tbElement, "Write the elment you want to add");
             ttip.SetToolTip(this.lblNumElements, "Amount of elements in list one");
             ttip.SetToolTip(this.lblIndex, "Index of selected elements in list one");
+            cont = title.Length - 1;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (!variableRepeated(lbOne, tbElement.Text))
+            if (!variableRepeated(lbOne, tbElement.Text) && !tbElement.Text.Equals(""))
             {
                 lbOne.Items.Add(tbElement.Text);
                 lblNumElements.Text = "Elts in list one: " + lbOne.Items.Count;
@@ -94,26 +95,24 @@ namespace Ejercicio_5
             ttip.SetToolTip(this.lbTwo, "Elts in list two " + lbTwo.Items.Count.ToString());
         }
 
+        string title = " Exercise 5 ";
+        int cont;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string title = "Exercise 5";
-            int cont = title.Length - 1;
-            string titleText = title;
-            string titleShowing; ;
+            string titleShowing;
 
-            if (cont <= 0)
+            if (cont == 0)
             {
                 cont = title.Length - 1;
+                Text = " ";
+
             }
             else
             {
-                titleShowing = titleText[cont] + Text;
+                titleShowing = title[cont] + Text;
                 cont--;
-                if (titleShowing.Length >= 10)
-                {
-                    Text = titleShowing.Substring(0, 10);
-                }
                 Text = titleShowing;
+
             }
         }
 

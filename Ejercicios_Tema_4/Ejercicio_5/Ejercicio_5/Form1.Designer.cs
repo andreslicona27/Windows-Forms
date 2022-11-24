@@ -170,7 +170,6 @@
             this.Controls.Add(this.lbTwo);
             this.Controls.Add(this.lbOne);
             this.Name = "Form1";
-            this.Text = "Ejercicio 5 ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
