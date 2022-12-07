@@ -39,7 +39,20 @@ namespace Ejercicio_1_v2
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-           
+             if (e.Button == MouseButtons.Left)
+            {
+                button1.BackColor = Color.SteelBlue;
+
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                button2.BackColor = Color.SteelBlue;
+            }
+            else
+            {
+                button1.BackColor = Color.SteelBlue;
+                button2.BackColor = Color.SteelBlue;
+            }
 
         }
         private void Form1_MouseUp(object sender, MouseEventArgs e)
