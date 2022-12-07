@@ -9,7 +9,7 @@ namespace Ejercicio_1_v2
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("¿Seguro que desea salir?", "Mi Aplicación",
+            if (MessageBox.Show("Â¿Seguro que desea salir?", "Mi AplicaciÃ³n",
            MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
             == DialogResult.Cancel)
             {
@@ -22,24 +22,14 @@ namespace Ejercicio_1_v2
         }
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (sender == button1)
+           if (sender is Button)
             {
-                Text = String.Format("Mouse Tester X:{0} Y:{1}",
-                e.Location.X + button1.Location.X,
-                e.Location.Y + button2.Location.Y);
-
-            }
-            else if (sender == button2)
-            {
-                Text = String.Format("Mouse Tester X:{0} Y:{1}",
-                e.Location.X + button2.Location.X,
-                e.Location.Y + button2.Location.Y);
+                Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X + ((Button)sender).Location.X, e.Location.Y + ((Button)sender).Location.X);
             }
             else
             {
                 Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X, e.Location.Y);
             }
-
         }
 
         private void Form1_MouseLeave(object sender, EventArgs e)
@@ -49,14 +39,7 @@ namespace Ejercicio_1_v2
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (sender is Button)
-            {
-                Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X + ((Button)sender).Location.X, e.Location.Y + ((Button)sender).Location.X);
-            }
-            else
-            {
-                Text = String.Format("Mouse Tester X:{0} Y:{1}", e.Location.X, e.Location.Y);
-            }
+           
 
         }
         private void Form1_MouseUp(object sender, MouseEventArgs e)
