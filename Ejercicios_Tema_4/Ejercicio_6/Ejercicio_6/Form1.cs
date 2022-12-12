@@ -10,10 +10,10 @@ namespace Ejercicio_6
         public Form1()
         {
             InitializeComponent();
-            btnReset.BackColor = btnColor;
 
             Form2 pinForm = new Form2();
-            // Showing the modal form for it to show before the principal form comes out 
+            //Showing the modal form for it to show before the principal form comes out 
+
             //pinForm.ShowDialog();
             //if (pinForm.ShowDialog() == DialogResult.Cancel || pinForm.tries == 0)
             //{
@@ -28,9 +28,6 @@ namespace Ejercicio_6
         {
             int x = 10;
             int y = 70;
-            btnReset.Click += new System.EventHandler(this.btn_Click);
-            btnReset.MouseEnter += new EventHandler(this.btn_MouseEnter);
-            btnReset.MouseLeave += new EventHandler(this.btn_MouseLeave);
 
             // BUTTONS CREATON AND POSITIONING
             for (int i = 0; i < 12; i++)
@@ -57,7 +54,7 @@ namespace Ejercicio_6
                 btn.Location = new Point(x, y);
                 btn.Size = new Size(80, 40);
 
-                // FUNCITONS 
+                // FUNCTIONS 
                 this.btn.Click += new EventHandler(this.btn_Click);
                 this.btn.MouseEnter += new EventHandler(this.btn_MouseEnter);
                 this.btn.MouseLeave += new EventHandler(this.btn_MouseLeave);
@@ -74,6 +71,20 @@ namespace Ejercicio_6
                     x += 80 + 5;
                 }
             }
+
+            btnReset = new Button();
+            // PROPERTIES
+            btnReset.Text = "Reset";
+            btnReset.BackColor = btnColor;
+            btnReset.Location = new Point(11, 254);
+            btnReset.Size = new Size(245, 39);
+
+            // FUNCTIONS 
+            this.btnReset.Click += new EventHandler(this.button1_Click);
+            this.btnReset.MouseEnter += new EventHandler(this.btn_MouseEnter);
+            this.btnReset.MouseLeave += new EventHandler(this.btn_MouseLeave);
+            this.Controls.Add(btnReset);
+
         }
 
         private void aboutOfToolStripMenuItem_Click(object sender, EventArgs e)
@@ -92,22 +103,22 @@ namespace Ejercicio_6
             if (sender is Button)
             {
                 txtNumber.Text += ((Button)sender).Text;
-                ((Button)sender).BackColor = Color.BlueViolet;
+                ((Button)sender).BackColor = Color.Gainsboro;
 
             }
         }
 
         private void btn_MouseEnter(object sender, EventArgs e)
         {
-            if (((Button)sender).BackColor != Color.BlueViolet)
+            if (((Button)sender).BackColor != Color.Gainsboro)
             {
-                ((Button)sender).BackColor = Color.Aqua;
+                ((Button)sender).BackColor = Color.Yellow;
             }
         }
 
         private void btn_MouseLeave(object sender, EventArgs e)
         {
-            if (((Button)sender).BackColor != Color.BlueViolet)
+            if (((Button)sender).BackColor != Color.Gainsboro)
             {
                 ((Button)sender).BackColor = btnColor;
             }
@@ -115,7 +126,7 @@ namespace Ejercicio_6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtNumber.Text = " ";
+            txtNumber.Text = "";
             foreach (Control con in this.Controls)
             {
                 if (con.GetType() == typeof(Button))
@@ -123,7 +134,41 @@ namespace Ejercicio_6
                     con.BackColor = btnColor;
                 }
             }
+            btnReset.BackColor = btnColor;
         }
 
+        private void saveNumberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Filter = "txt|*.txt|All files|*.*";
+                saveFileDialog1.Title = "Save Number";
+                saveFileDialog1.ShowDialog();
+
+                if (txtNumber.Text != "")
+                {
+                    using (StreamReader sr = new StreamReader("MyNumber.txt"))
+                    {
+                        Console.WriteLine(sr.ReadToEnd());
+                    }
+
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("The file was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (DirectoryNotFoundException)
+            {
+                MessageBox.Show("The directory was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("The file could not be opened.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

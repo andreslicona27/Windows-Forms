@@ -38,7 +38,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutOfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnReset = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +77,7 @@
             this.saveNumberToolStripMenuItem.Name = "saveNumberToolStripMenuItem";
             this.saveNumberToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.saveNumberToolStripMenuItem.Text = "Save Number";
+            this.saveNumberToolStripMenuItem.Click += new System.EventHandler(this.saveNumberToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
@@ -110,22 +110,11 @@
             this.aboutOfToolStripMenuItem.Text = "About of";
             this.aboutOfToolStripMenuItem.Click += new System.EventHandler(this.aboutOfToolStripMenuItem_Click);
             // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(11, 254);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(245, 39);
-            this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(268, 305);
-            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

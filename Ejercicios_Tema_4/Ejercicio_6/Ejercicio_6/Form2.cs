@@ -15,6 +15,7 @@ namespace Ejercicio_6
     {
 
         public int tries = 3;
+        string pin = "1234";
         public Form2()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace Ejercicio_6
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            if (txtPin.Text != "1234")
+            if (txtPin.Text != pin)
             {
                 if (tries < 1)
                 {
@@ -34,7 +35,6 @@ namespace Ejercicio_6
                     tries--;
                     lblTries.Text = tries + " Tries left";
                     txtPin.Text = "";
-                    txtPin.PlaceholderText = "Wring pin, try again";
                 }
             }
         }

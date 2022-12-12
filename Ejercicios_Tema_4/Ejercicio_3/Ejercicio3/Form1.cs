@@ -33,7 +33,6 @@ namespace Ejercicio3
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     filePath = openFileDialog.FileName;
-                    openFileDialog.OpenFile();
                 }
             }
 

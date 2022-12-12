@@ -39,7 +39,6 @@
             this.txtPin.Location = new System.Drawing.Point(12, 12);
             this.txtPin.Name = "txtPin";
             this.txtPin.PasswordChar = '*';
-            this.txtPin.PlaceholderText = "Insert the pin SECRETLY";
             this.txtPin.Size = new System.Drawing.Size(143, 23);
             this.txtPin.TabIndex = 0;
             // 
