@@ -1,0 +1,8 @@
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\bin\Debug\Ejercicio_1.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\bin\Debug\Ejercicio_1.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.LabelTextbox.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1\obj\Debug\Ejercicio_1.pdb
