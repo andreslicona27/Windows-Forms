@@ -1,0 +1,8 @@
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\bin\Debug\MyFirstComponent.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\bin\Debug\MyFirstComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.LabelTextbox.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.pdb

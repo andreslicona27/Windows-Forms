@@ -1,0 +1,14 @@
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\bin\Debug\FirstAppWithComponent.exe.config
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\bin\Debug\FirstAppWithComponent.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\bin\Debug\FirstAppWithComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\bin\Debug\MyFirstComponent.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\bin\Debug\MyFirstComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.Form1.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.Properties.Resources.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.csproj.CopyComplete
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\FirstAppWithComponent\obj\Debug\FirstAppWithComponent.pdb

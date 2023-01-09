@@ -1,5 +1,6 @@
 using System.Drawing.Printing;
 using System.Resources;
+using System.Windows.Forms;
 
 namespace Ejercicio_6
 {
@@ -149,9 +150,19 @@ namespace Ejercicio_6
 
                 if (txtNumber.Text != "")
                 {
-                    using (StreamReader sr = new StreamReader("MyNumber.txt"))
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        Console.WriteLine(sr.ReadToEnd());
+                        string fileName = saveFileDialog1.FileName;
+                        string extesion = Path.GetExtension(fileName);
+                        switch (extesion)
+                        {
+                            case ".txt"://do something here 
+                                break;
+                            case ".xls"://do something here 
+                                break;
+                            default://do something here
+                                break;
+                        }
                     }
 
                 }
