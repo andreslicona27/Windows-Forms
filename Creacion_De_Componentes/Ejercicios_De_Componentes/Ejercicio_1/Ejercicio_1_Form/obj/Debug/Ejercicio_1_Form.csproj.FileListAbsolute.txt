@@ -12,3 +12,17 @@ C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Compon
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1.pdb
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.Form1.resources
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.CopyComplete
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1_Form.exe.config
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1_Form.exe
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1_Form.pdb
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1.dll
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\bin\Debug\Ejercicio_1.pdb
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.AssemblyReference.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.Form1.resources
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.Properties.Resources.resources
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.GenerateResource.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.CoreCompileInputs.cache
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.csproj.CopyComplete
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.exe
+C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_1\Ejercicio_1_Form\obj\Debug\Ejercicio_1_Form.pdb

@@ -19,7 +19,7 @@ namespace Ejercicio_1_Form
 
         private void btnPosicion_Click(object sender, EventArgs e)
         {
-            if (lbltxt1.Posicion.Equals("IZQUIERDA"))
+            if (lbltxt1.Posicion == Ejercicio_1.ePosicion.IZQUIERDA)
             {
                 lbltxt1.Posicion = Ejercicio_1.ePosicion.DERECHA;
             } else
@@ -27,6 +27,7 @@ namespace Ejercicio_1_Form
                 lbltxt1.Posicion = Ejercicio_1.ePosicion.IZQUIERDA;
             }
 
+            Text = lbltxt1.Posicion.ToString();
         }
     }
 }
