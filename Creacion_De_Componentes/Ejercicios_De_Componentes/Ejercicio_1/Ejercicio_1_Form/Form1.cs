@@ -28,12 +28,15 @@ namespace Ejercicio_1_Form
             }
 
             Text = lbltxt1.Posicion.ToString();
+<<<<<<< HEAD
 
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawString("Prueba de escritura de texto", this.Font, Brushes.BlueViolet, 10, 10);
+=======
+>>>>>>> refs/remotes/origin/main
         }
     }
 }
