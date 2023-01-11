@@ -15,7 +15,7 @@ namespace Ejercicio_1
     {
         IZQUIERDA, DERECHA
     }
-    public partial class LabelTextbox: UserControl
+    public partial class LabelTextbox : UserControl
     {
         public LabelTextbox()
         {
@@ -25,7 +25,7 @@ namespace Ejercicio_1
         private ePosicion posicion = ePosicion.IZQUIERDA;
         [Category("Clase DI")]
         [Description("Indica si la Label se sitúa a la IZQUIERDA o DERECHA del Textbox")]
-         public ePosicion Posicion
+        public ePosicion Posicion
         {
             set
             {
@@ -67,6 +67,9 @@ namespace Ejercicio_1
                 return separacion;
             }
         }
+
+        // The private element of text it all ready exists, so you dont need to added
+        // You just add the access to te property
 
         [Category("Clase DI")]
         [Description("Texto asociado a la Label del control")]
@@ -123,19 +126,52 @@ namespace Ejercicio_1
                     break;
             }
         }
+
+
         // Esta función has de enlazarla con el evento SizeChanged.
         // Sería necesario también tener en cuenta otros eventos como FontChanged
         // que aquí nos saltamos.
-        private void LabelTextBox_SizeChanged(object sender, EventArgs e)
-        {
-            recolocar();
-        }
+        public event System.EventHandler SizeChanged;
 
         protected override void OnSizeChanged(EventArgs e)
         {
-            base.OnSizeChanged(e);
+            if (SizeChanged != null)
+            {
+                recolocar();
+            }
+        }
+
+
+
+        private void LabelTextBox_SeparacionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void OnSeparacionChanged(EventArgs e)
+        {
+            recolocar();
+
+        }
+
+        private void txt_KeyPress(object sender, EventArgs e)
+        {
+            this.OnKeyPress(e);
+        }
+        protected virtual void OnKeyPress(EventArgs e)
+        {
+
+        }
+
+
+        private void LabelTextBox_TextChanged(object sender, EventArgs e)
+        {
             recolocar();
         }
 
+        protected override void OnTextChanged(EventArgs e)
+        {
+            base.OnTextChanged(e);
+        }
     }
 }

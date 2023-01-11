@@ -28,24 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbltxt1 = new Ejercicio_1.LabelTextbox();
             this.btnPosicion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbltxt1
-            // 
-            this.lbltxt1.Location = new System.Drawing.Point(12, 12);
-            this.lbltxt1.Name = "lbltxt1";
-            this.lbltxt1.Posicion = Ejercicio_1.ePosicion.IZQUIERDA;
-            this.lbltxt1.Separacion = 10;
-            this.lbltxt1.Size = new System.Drawing.Size(219, 20);
-            this.lbltxt1.TabIndex = 0;
-            this.lbltxt1.TextLbl = "HOLA";
-            this.lbltxt1.TextTxt = "";
-            // 
             // btnPosicion
             // 
-            this.btnPosicion.Location = new System.Drawing.Point(28, 66);
+            this.btnPosicion.Location = new System.Drawing.Point(186, 76);
             this.btnPosicion.Name = "btnPosicion";
             this.btnPosicion.Size = new System.Drawing.Size(75, 23);
             this.btnPosicion.TabIndex = 1;
@@ -58,10 +46,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(346, 122);
-            this.Controls.Add(this.btnPosicion);
-            this.Controls.Add(this.lbltxt1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
