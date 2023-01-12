@@ -22,21 +22,25 @@ namespace Ejercicio_1_Form
             if (lbltxt1.Posicion == Ejercicio_1.ePosicion.IZQUIERDA)
             {
                 lbltxt1.Posicion = Ejercicio_1.ePosicion.DERECHA;
-            } else
+            }
+            else
             {
                 lbltxt1.Posicion = Ejercicio_1.ePosicion.IZQUIERDA;
             }
 
             Text = lbltxt1.Posicion.ToString();
-<<<<<<< HEAD
 
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawString("Prueba de escritura de texto", this.Font, Brushes.BlueViolet, 10, 10);
-=======
->>>>>>> refs/remotes/origin/main
+            //e.Graphics.DrawString("Prueba de escritura de texto", this.Font, Brushes.BlueViolet, 10, 10);
+        }
+
+
+        private void lbltxt1_KeyUp(object sender, KeyEventArgs e)
+        {
+            this.Text = "Codigo: " + e.KeyValue;
         }
     }
 }

@@ -55,6 +55,7 @@ namespace Ejercicio_1
                 if (value >= 0)
                 {
                     separacion = value;
+                    OnSeparacionChanged(EventArgs.Empty);
                     recolocar();
                 }
                 else
@@ -88,6 +89,7 @@ namespace Ejercicio_1
         [Category("Clase DI")]
         [Description("Texto asociado al TextBox del control")]
         public string TextTxt
+
         {
             set
             {
@@ -98,6 +100,22 @@ namespace Ejercicio_1
                 return txt.Text;
             }
         }
+
+
+        [Category("Clase DI")]
+        [Description("Convertir el texto del textbox en uno de contraseña")]
+        public char PswChr
+        {
+            set
+            {
+                txt.PasswordChar = value;
+            }
+            get
+            {
+                return txt.PasswordChar;
+            }
+        }
+
 
         private void recolocar()
         {
@@ -110,7 +128,9 @@ namespace Ejercicio_1
                     txt.Location = new Point(lbl.Width + Separacion, 0);
                     //Establecemos ancho del Textbox
                     //(la label tiene ancho por autosize)
-                    txt.Width = this.Width - lbl.Width - Separacion;
+                    // El primero cambia el tamaño del txt y deja igual el tamaño del componenete, el segundo cambia el tamaño del componenete y deja igual el del txt
+                    //txt.Width = this.Width - lbl.Width - Separacion;
+                    this.Width = txt.Width + lbl.Width + Separacion;
                     //Establecemos altura del componente
                     this.Height = Math.Max(txt.Height, lbl.Height);
                     break;
@@ -118,7 +138,9 @@ namespace Ejercicio_1
                     //Establecemos posición del componente txt
                     txt.Location = new Point(0, 0);
                     //Establecemos ancho del Textbox
-                    txt.Width = this.Width - lbl.Width - Separacion;
+                    // El primero cambia el tamaño del txt y deja igual el tamaño del componenete, el segundo cambia el tamaño del componenete y deja igual el del txt
+                    //txt.Width = this.Width - lbl.Width - Separacion;
+                    this.Width = txt.Width + lbl.Width + Separacion;
                     //Establecemos posición del componente lbl
                     lbl.Location = new Point(txt.Width + Separacion, 0);
                     //Establecemos altura del componente (Puede sacarse del switch)
@@ -131,6 +153,8 @@ namespace Ejercicio_1
         // Esta función has de enlazarla con el evento SizeChanged.
         // Sería necesario también tener en cuenta otros eventos como FontChanged
         // que aquí nos saltamos.
+        [Category("La propiedad cambió")]
+        [Description("Se lanza cuando la propiedad tamaño cambia")]
         public event System.EventHandler SizeChanged;
 
         protected override void OnSizeChanged(EventArgs e)
@@ -141,37 +165,44 @@ namespace Ejercicio_1
             }
         }
 
-
-
-        private void LabelTextBox_SeparacionChanged(object sender, EventArgs e)
+        private void lbl_ChangedSize(object sender, EventArgs e)
         {
-
+            this.OnSizeChanged(e);
         }
+
+        [Category("La propiedad cambió")]
+        [Description("Se lanza cuando la propiedad separacion cambia")]
+        public event System.EventHandler SeparacionChanged;
 
         protected virtual void OnSeparacionChanged(EventArgs e)
         {
-            recolocar();
-
-        }
-
-        private void txt_KeyPress(object sender, EventArgs e)
-        {
-            this.OnKeyPress(e);
-        }
-        protected virtual void OnKeyPress(EventArgs e)
-        {
-
+            if (SeparacionChanged != null)
+            {
+                SeparacionChanged(this, e);
+            }
         }
 
 
-        private void LabelTextBox_TextChanged(object sender, EventArgs e)
+        private void txt_KeyUp(object sender, KeyEventArgs e)
         {
-            recolocar();
+            this.OnKeyUp(e);
         }
 
-        protected override void OnTextChanged(EventArgs e)
+
+        [Category("La propiedad cambió")]
+        [Description("Se lanza cuando la propiedad texto cambia")]
+        public event System.EventHandler TxtChanged;
+        protected virtual void OnTxtChanged(EventArgs e)
         {
-            base.OnTextChanged(e);
+            if (TxtChanged != null)
+            {
+                TxtChanged(this, e);
+            }
+        }
+
+        private void txt_TextChanged2(object sender, EventArgs e)
+        {
+            this.OnTxtChanged(EventArgs.Empty);
         }
     }
 }

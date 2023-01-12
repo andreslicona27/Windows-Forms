@@ -40,7 +40,7 @@
             this.lbl.Size = new System.Drawing.Size(35, 13);
             this.lbl.TabIndex = 0;
             this.lbl.Text = "label1";
-            this.lbl.LocationChanged += new System.EventHandler(this.LabelTextBox_SeparacionChanged);
+            this.lbl.SizeChanged += new System.EventHandler(this.lbl_ChangedSize);
             // 
             // txt
             // 
@@ -48,8 +48,8 @@
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(100, 20);
             this.txt.TabIndex = 1;
-            this.txt.LocationChanged += new System.EventHandler(this.LabelTextBox_SeparacionChanged);
-            this.txt.TextChanged += new System.EventHandler(this.LabelTextBox_TextChanged);
+            this.txt.TextChanged += new System.EventHandler(this.txt_TextChanged2);
+            this.txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_KeyUp);
             // 
             // LabelTextbox
             // 
