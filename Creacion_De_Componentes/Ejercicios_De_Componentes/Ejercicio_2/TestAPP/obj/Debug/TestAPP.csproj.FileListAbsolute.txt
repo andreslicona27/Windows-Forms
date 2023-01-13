@@ -1,0 +1,14 @@
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\bin\Debug\TestAPP.exe.config
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\bin\Debug\TestAPP.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\bin\Debug\TestAPP.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\bin\Debug\Ejercicio_2.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\bin\Debug\Ejercicio_2.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.Form1.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.Properties.Resources.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.csproj.CopyComplete
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_2\TestAPP\obj\Debug\TestAPP.pdb
