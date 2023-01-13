@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EtiquetaAviso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtiquetaAviso.Designer.cs">
+      <DependentUpon>EtiquetaAviso.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabelTextbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -52,6 +58,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EtiquetaAviso.resx">
+      <DependentUpon>EtiquetaAviso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LabelTextbox.resx">
       <DependentUpon>LabelTextbox.cs</DependentUpon>
     </EmbeddedResource>

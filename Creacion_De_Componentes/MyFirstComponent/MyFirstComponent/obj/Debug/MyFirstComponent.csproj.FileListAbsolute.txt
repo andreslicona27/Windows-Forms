@@ -6,3 +6,4 @@ C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyF
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.csproj.CoreCompileInputs.cache
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.dll
 C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\MyFirstComponent\MyFirstComponent\obj\Debug\MyFirstComponent.EtiquetaAviso.resources
