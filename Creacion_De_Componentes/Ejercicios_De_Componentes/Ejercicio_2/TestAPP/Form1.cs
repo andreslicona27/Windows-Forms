@@ -18,11 +18,11 @@ namespace TestAPP
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+      
+
+        private void etiquetaAviso2_ClickEnMarca(object sender, EventArgs e)
         {
-
+            MessageBox.Show("You click the image", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
-
-        
     }
 }

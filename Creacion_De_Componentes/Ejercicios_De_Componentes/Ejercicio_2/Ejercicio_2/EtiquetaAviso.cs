@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Drawing.Drawing2D;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Ejercicio_2
 {
@@ -49,8 +50,7 @@ namespace Ejercicio_2
                     ginitial,
                     gfinal);
 
-                Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
-                g.FillRectangle(l, rect);
+                g.FillRectangle(l, new Rectangle(0, 0, this.Width, this.Height));
                 l.Dispose();
 
             }
@@ -75,15 +75,27 @@ namespace Ejercicio_2
                     lapiz.Dispose();
                     break;
                 case eMarca.ImagenMarca:
-
+                    if (imagenMarca != null)
+                    {
+                        g.DrawImage(ImageMarca, new Rectangle(0, 0, this.FontHeight, this.FontHeight));
+                    }
                     break;
             }
 
             //Finalmente pintamos el Texto; desplazado si fuera necesario
             SolidBrush b = new SolidBrush(this.ForeColor);
-            g.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
-            Size tam = g.MeasureString(this.Text, this.Font).ToSize();
-            this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
+            if (Marca == eMarca.ImagenMarca && ImageMarca != null)
+            {
+                g.DrawString(this.Text, this.Font, b, offsetX + grosor + this.FontHeight, offsetY);
+                Size tam = g.MeasureString(this.Text, this.Font).ToSize();
+                this.Size = new Size(tam.Width + offsetX + grosor + this.FontHeight, tam.Height + offsetY * 2);
+            }
+            else
+            {
+                g.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
+                Size tam = g.MeasureString(this.Text, this.Font).ToSize();
+                this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
+            }
             b.Dispose();
 
 
@@ -171,6 +183,21 @@ namespace Ejercicio_2
             }
         }
 
+        [Category("Appearance")]
+        [Description("It launches when the user makes a click in the mark")]
+        public event System.EventHandler ClickEnMarca;
 
+        protected virtual void OnClickEnMarca(EventArgs e)
+        {
+            if(ClickEnMarca != null)
+            {
+                ClickEnMarca(this, e);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.OnClickEnMarca(EventArgs.Empty);
+        }
     }
 }
