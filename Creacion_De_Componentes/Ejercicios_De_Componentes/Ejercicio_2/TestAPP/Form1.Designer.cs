@@ -39,27 +39,28 @@
             this.etiquetaAviso1.GInitial = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.etiquetaAviso1.Gradient = true;
             this.etiquetaAviso1.ImageMarca = global::TestAPP.Properties.Resources.animal;
-            this.etiquetaAviso1.Location = new System.Drawing.Point(12, 25);
+            this.etiquetaAviso1.Location = new System.Drawing.Point(21, 35);
             this.etiquetaAviso1.Marca = Ejercicio_2.eMarca.ImagenMarca;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
             this.etiquetaAviso1.Size = new System.Drawing.Size(172, 60);
             this.etiquetaAviso1.TabIndex = 2;
             this.etiquetaAviso1.Text = "Hola";
-            this.etiquetaAviso1.ClickEnMarca += new System.EventHandler(this.etiquetaAviso2_ClickEnMarca);
+            this.etiquetaAviso1.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);
             // 
             // etiquetaAviso2
             // 
+            this.etiquetaAviso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaAviso2.GFinal = System.Drawing.Color.PaleGreen;
             this.etiquetaAviso2.GInitial = System.Drawing.Color.Plum;
             this.etiquetaAviso2.Gradient = true;
             this.etiquetaAviso2.ImageMarca = null;
-            this.etiquetaAviso2.Location = new System.Drawing.Point(12, 139);
+            this.etiquetaAviso2.Location = new System.Drawing.Point(21, 144);
             this.etiquetaAviso2.Marca = Ejercicio_2.eMarca.Cruz;
             this.etiquetaAviso2.Name = "etiquetaAviso2";
-            this.etiquetaAviso2.Size = new System.Drawing.Size(65, 15);
+            this.etiquetaAviso2.Size = new System.Drawing.Size(76, 18);
             this.etiquetaAviso2.TabIndex = 1;
             this.etiquetaAviso2.Text = "Mensaje";
-            this.etiquetaAviso2.ClickEnMarca += new System.EventHandler(this.etiquetaAviso2_ClickEnMarca);
+            this.etiquetaAviso2.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);
             // 
             // Form1
             // 

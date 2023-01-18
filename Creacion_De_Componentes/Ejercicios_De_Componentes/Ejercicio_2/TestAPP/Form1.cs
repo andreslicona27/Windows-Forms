@@ -18,11 +18,9 @@ namespace TestAPP
             InitializeComponent();
         }
 
-      
-
-        private void etiquetaAviso2_ClickEnMarca(object sender, EventArgs e)
+        private void etiquetaAviso1_ClickEnMarca(object sender, EventArgs e)
         {
-            MessageBox.Show("You click the image", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
+            MessageBox.Show("You click the image", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

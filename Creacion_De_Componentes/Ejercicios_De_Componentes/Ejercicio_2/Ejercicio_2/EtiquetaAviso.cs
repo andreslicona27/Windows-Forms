@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Drawing.Drawing2D;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.CompilerServices;
 
 namespace Ejercicio_2
 {
@@ -189,15 +190,19 @@ namespace Ejercicio_2
 
         protected virtual void OnClickEnMarca(EventArgs e)
         {
-            if(ClickEnMarca != null)
+            if (ClickEnMarca != null)
             {
                 ClickEnMarca(this, e);
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        protected override void OnMouseClick(MouseEventArgs e)
         {
-            this.OnClickEnMarca(EventArgs.Empty);
+            base.OnMouseClick(e);
+            if (e.X <= this.FontHeight)
+            {
+                this.OnClickEnMarca(EventArgs.Empty);
+            }
         }
     }
 }
