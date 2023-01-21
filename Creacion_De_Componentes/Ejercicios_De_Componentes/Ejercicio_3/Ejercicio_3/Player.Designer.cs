@@ -1,4 +1,7 @@
-﻿namespace Ejercicio_3
+﻿using System.Runtime.Versioning;
+using System.Windows.Forms.PropertyGridInternal;
+
+namespace Ejercicio_3
 {
     partial class Player
     {
@@ -28,33 +31,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Player));
+            this.lblTime = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(97, 21);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(35, 13);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "label1";
+            // 
             // btnPlay
             // 
-            this.btnPlay.BackColor = System.Drawing.Color.White;
-            this.btnPlay.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay.Image")));
-            this.btnPlay.Location = new System.Drawing.Point(161, 118);
+            this.btnPlay.Location = new System.Drawing.Point(24, 16);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(63, 47);
-            this.btnPlay.TabIndex = 0;
-            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Size = new System.Drawing.Size(38, 23);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.Text = ">";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.OnPlayClick);
             // 
             // Player
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnPlay);
+            this.Controls.Add(this.lblTime);
             this.Name = "Player";
-            this.Size = new System.Drawing.Size(392, 287);
+            this.Size = new System.Drawing.Size(172, 60);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnPlay;
     }
 }
