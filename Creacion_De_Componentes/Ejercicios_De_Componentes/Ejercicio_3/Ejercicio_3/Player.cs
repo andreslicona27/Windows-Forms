@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Ejercicio_3
 {
-    public partial class UserControl1: UserControl
+    public partial class Player: UserControl
     {
-        public UserControl1()
+        public Player()
         {
             InitializeComponent();
         }
+
+     
     }
 }
