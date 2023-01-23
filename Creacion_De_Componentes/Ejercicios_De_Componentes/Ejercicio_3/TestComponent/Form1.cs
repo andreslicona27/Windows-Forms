@@ -16,5 +16,30 @@ namespace TestComponent
         {
             InitializeComponent();
         }
+
+        private void player1_DesbordaTiempo(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog images = new OpenFileDialog();
+            images.Filter = "Directorios|*.this.directory";
+
+            try {
+                if (images.ShowDialog() == DialogResult.OK)
+                {
+                    string dir = images.FileName;
+                    // hacer algo con el directorio seleccionado
+                }
+            }
+            catch
+            {
+
+            }
+
+
+        }
     }
 }

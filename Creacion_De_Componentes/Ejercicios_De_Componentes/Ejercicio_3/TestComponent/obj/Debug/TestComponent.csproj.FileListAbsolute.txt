@@ -9,3 +9,17 @@ C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De
 C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.exe
 C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.pdb
 C:\Users\Andres Licona\vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.Form1.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\bin\Debug\TestComponent.exe.config
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\bin\Debug\TestComponent.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\bin\Debug\TestComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.csproj.AssemblyReference.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.Form1.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.Properties.Resources.resources
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.csproj.GenerateResource.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.exe
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\bin\Debug\Ejercicio_3.dll
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\bin\Debug\Ejercicio_3.pdb
+C:\Users\Andres\Vivas\Windows-Forms\Creacion_De_Componentes\Ejercicios_De_Componentes\Ejercicio_3\TestComponent\obj\Debug\TestComponent.csproj.CopyComplete
