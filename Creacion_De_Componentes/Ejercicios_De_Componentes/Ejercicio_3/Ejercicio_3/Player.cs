@@ -21,6 +21,11 @@ namespace Ejercicio_3
 
         // PROPERTIES
         private bool paused;
+        public bool Paused
+        {
+            set { paused = value; }
+            get { return paused; }
+        }
 
         private int seconds;
         [Category("Appearance")]

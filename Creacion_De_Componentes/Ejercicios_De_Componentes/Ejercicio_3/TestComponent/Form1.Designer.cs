@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.player1 = new Ejercicio_3.Player();
-            this.cbName = new System.Windows.Forms.ComboBox();
+            this.cbFrecuency = new System.Windows.Forms.ComboBox();
             this.lblTime = new System.Windows.Forms.Label();
             this.btnOpen = new System.Windows.Forms.Button();
             this.pbImages = new System.Windows.Forms.PictureBox();
@@ -39,17 +39,18 @@
             // player1
             // 
             this.player1.Location = new System.Drawing.Point(214, 158);
-            this.player1.Minutes = -60;
+            this.player1.Minutes = -120;
             this.player1.Name = "player1";
             this.player1.Seconds = 0;
             this.player1.Size = new System.Drawing.Size(172, 60);
             this.player1.TabIndex = 0;
+            this.player1.PlayClick += new System.EventHandler(this.player1_PlayClick);
             this.player1.DesbordaTiempo += new System.EventHandler(this.player1_DesbordaTiempo);
             // 
-            // cbName
+            // cbFrecuency
             // 
-            this.cbName.FormattingEnabled = true;
-            this.cbName.Items.AddRange(new object[] {
+            this.cbFrecuency.FormattingEnabled = true;
+            this.cbFrecuency.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -70,10 +71,10 @@
             "18",
             "19",
             "20"});
-            this.cbName.Location = new System.Drawing.Point(12, 94);
-            this.cbName.Name = "cbName";
-            this.cbName.Size = new System.Drawing.Size(121, 21);
-            this.cbName.TabIndex = 1;
+            this.cbFrecuency.Location = new System.Drawing.Point(12, 94);
+            this.cbFrecuency.Name = "cbFrecuency";
+            this.cbFrecuency.Size = new System.Drawing.Size(121, 21);
+            this.cbFrecuency.TabIndex = 1;
             // 
             // lblTime
             // 
@@ -111,7 +112,7 @@
             this.Controls.Add(this.pbImages);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.cbName);
+            this.Controls.Add(this.cbFrecuency);
             this.Controls.Add(this.player1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -124,7 +125,7 @@
         #endregion
 
         private Ejercicio_3.Player player1;
-        private System.Windows.Forms.ComboBox cbName;
+        private System.Windows.Forms.ComboBox cbFrecuency;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.PictureBox pbImages;

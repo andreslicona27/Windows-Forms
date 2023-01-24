@@ -9,13 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TestComponent
 {
     public partial class Form1 : Form
     {
         Image[] images;
-        int contImge = 0;
+        Timer timer;
+        int contImage = 0;
 
         public Form1()
         {
@@ -24,53 +26,72 @@ namespace TestComponent
 
         private void player1_DesbordaTiempo(object sender, EventArgs e)
         {
-
+            player1.Minutes++;
         }
 
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
             DirectoryInfo directory;
             FileInfo[] files;
-            string directoryPath = string.Empty;
 
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            if (fbd.ShowDialog() == DialogResult.OK)
             {
-                openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "png files (*.png)|*.png|jpg files(*.jpg)|*.jpg";
-                openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string directoryPath = fbd.SelectedPath;
+                try
                 {
-                    directoryPath = openFileDialog.FileName;
-                }
-                directory = new DirectoryInfo(directoryPath);
-                files = directory.GetFiles().ToArray();
-
-            }
-
-            try
-            {
-                images = new Image[files.Length];
-                if (directoryPath != string.Empty)
-                {
-                    for (int i = 0; i < directoryPath.Length; i++)
+                    if (directoryPath != string.Empty)
                     {
-                        images[i] = Image.FromFile(files[i].FullName);
+                        directory = new DirectoryInfo(directoryPath);
+                        files = directory.GetFiles().ToArray();
+                        images = new Image[files.Length];
+
+                        for (int i = 0; i < images.Length; i++)
+                        {
+                            try
+                            {
+                                images[i] = Image.FromFile(files[i].FullName);
+                            }
+                            catch (IOException)
+                            {
+                                MessageBox.Show("An error has ocurred", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
+
+                }
+                catch (DirectoryNotFoundException)
+                {
+                    MessageBox.Show("We dont find the directory", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (IOException)
+                {
+                    MessageBox.Show("An error ocurred in the selection of the directory", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
-            catch (DirectoryNotFoundException)
-            {
-                MessageBox.Show("We dont find the directory", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (OutOfMemoryException)
-            {
-                MessageBox.Show("An error ocurred in the selection of the directory", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        }
 
+        
+        private void player1_PlayClick(object sender, EventArgs e)
+        {
+            if (player1.Paused)
+            {
+                timer.Stop();
+            }
+            else
+            {
+                timer = new Timer();
+                timer.Interval = 1000;
+                contImage = (cbFrecuency.SelectedIndex + 1) * 1000;
+                timer.Tick += new EventHandler(ImageChange);
+                timer.Start();
+            }
+        }
+
+        private void ImageChange(object sender, EventArgs e)
+        {
 
         }
     }
