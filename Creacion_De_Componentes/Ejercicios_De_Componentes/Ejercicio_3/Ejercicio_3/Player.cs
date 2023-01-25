@@ -23,8 +23,14 @@ namespace Ejercicio_3
         private bool paused;
         public bool Paused
         {
-            set { paused = value; }
-            get { return paused; }
+            set 
+            { 
+                paused = value; 
+            }
+            get 
+            { 
+                return paused; 
+            }
         }
 
         private int seconds;
@@ -66,7 +72,7 @@ namespace Ejercicio_3
                 {
                     throw new ArgumentException();
                 }
-                else if (minutes <= 60)
+                else if (minutes >= 60)
                 {
                     minutes = value - 60;
                 }
@@ -88,14 +94,14 @@ namespace Ejercicio_3
 
         private void OnPlayClick(object sender, EventArgs e)
         {
-            if (paused)
+            if (!paused)
             {
-                lblTime.Text = "||";
+                btnPlay.Text = ">";
                 paused = true;
             }
             else
             {
-                lblTime.Text = ">";
+                btnPlay.Text = "||";
                 paused = false;
             }
             PlayClick(this, EventArgs.Empty);
@@ -105,6 +111,12 @@ namespace Ejercicio_3
         [Category("Appearance")]
         [Description("Initial value in the minutes part")]
         public event System.EventHandler DesbordaTiempo;
+
+        public void TimeUpdate()
+        {
+            lblTime.Text = String.Format("{0:D2}:{1:D2}", Minutes, Seconds);
+            Seconds++;
+        }
 
     }
 }
