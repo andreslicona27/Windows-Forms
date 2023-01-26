@@ -73,15 +73,16 @@
             "18",
             "19",
             "20"});
-            this.cbFrecuency.Location = new System.Drawing.Point(12, 155);
+            this.cbFrecuency.Location = new System.Drawing.Point(12, 51);
             this.cbFrecuency.Name = "cbFrecuency";
             this.cbFrecuency.Size = new System.Drawing.Size(121, 21);
             this.cbFrecuency.TabIndex = 1;
+            this.cbFrecuency.SelectedIndex = 0;
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(9, 139);
+            this.lblTime.Location = new System.Drawing.Point(9, 35);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(103, 13);
             this.lblTime.TabIndex = 2;
@@ -89,7 +90,7 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(12, 34);
+            this.btnOpen.Location = new System.Drawing.Point(12, 94);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(121, 23);
             this.btnOpen.TabIndex = 5;
@@ -109,7 +110,7 @@
             // lblDirectorySelected
             // 
             this.lblDirectorySelected.AutoSize = true;
-            this.lblDirectorySelected.Location = new System.Drawing.Point(12, 71);
+            this.lblDirectorySelected.Location = new System.Drawing.Point(12, 131);
             this.lblDirectorySelected.Name = "lblDirectorySelected";
             this.lblDirectorySelected.Size = new System.Drawing.Size(0, 13);
             this.lblDirectorySelected.TabIndex = 7;

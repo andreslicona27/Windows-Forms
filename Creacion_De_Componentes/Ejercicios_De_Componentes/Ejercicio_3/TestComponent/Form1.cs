@@ -15,7 +15,7 @@ namespace TestComponent
 {
     public partial class Form1 : Form
     {
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace TestComponent
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = fbd.SelectedPath;
-                lblDirectorySelected.Text = "You selected a directory";
+                lblDirectorySelected.Text = "Directory selected";
                 try
                 {
                     if (directoryPath != string.Empty)
