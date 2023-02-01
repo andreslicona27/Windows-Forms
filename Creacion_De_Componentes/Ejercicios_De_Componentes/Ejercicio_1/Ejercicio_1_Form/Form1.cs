@@ -42,5 +42,18 @@ namespace Ejercicio_1_Form
         {
             this.Text = "Codigo: " + e.KeyValue;
         }
+
+        private void btnMoreSeparation_Click(object sender, EventArgs e)
+        {
+            if (((Button)sender) == btnMoreSeparation)
+            {
+                lbltxt1.Separacion += 5;
+            }
+            else if (((Button)sender) == btnLessSeparation)
+            {
+                lbltxt1.Separacion -= 5;
+            }
+        }
+
     }
 }
