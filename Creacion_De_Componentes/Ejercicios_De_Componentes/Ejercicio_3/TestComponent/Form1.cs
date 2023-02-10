@@ -15,10 +15,7 @@ namespace TestComponent
 {
     public partial class Form1 : Form
     {
-        Image[] images;
-        Timer timer;
-        int contImage = 0;
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +23,11 @@ namespace TestComponent
 
         private void player1_DesbordaTiempo(object sender, EventArgs e)
         {
-            player1.Minutes++;
+            player1.Seconds++;
         }
 
 
+        Image[] images;
         private void btnOpen_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
@@ -39,6 +37,7 @@ namespace TestComponent
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = fbd.SelectedPath;
+                lblDirectorySelected.Text = "Directory selected";
                 try
                 {
                     if (directoryPath != string.Empty)
@@ -73,7 +72,9 @@ namespace TestComponent
             }
         }
 
-        
+
+        Timer timer = new Timer();
+        int contImage = 0;
         private void player1_PlayClick(object sender, EventArgs e)
         {
             if (player1.Paused)
@@ -82,7 +83,6 @@ namespace TestComponent
             }
             else
             {
-                timer = new Timer();
                 timer.Interval = 1000;
                 contImage = (cbFrecuency.SelectedIndex + 1) * 1000;
                 timer.Tick += new EventHandler(ImageChange);
@@ -90,9 +90,18 @@ namespace TestComponent
             }
         }
 
+        int showingImage = 0;
         private void ImageChange(object sender, EventArgs e)
         {
-
+            if (images != null)
+            {
+                if (showingImage < images.Length)
+                {
+                    pbImages.Image = images[showingImage];
+                }
+                showingImage++;
+            }
+            player1.TimeUpdate();
         }
     }
 }

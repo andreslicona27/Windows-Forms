@@ -33,14 +33,16 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.btnOpen = new System.Windows.Forms.Button();
             this.pbImages = new System.Windows.Forms.PictureBox();
+            this.lblDirectorySelected = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImages)).BeginInit();
             this.SuspendLayout();
             // 
             // player1
             // 
             this.player1.Location = new System.Drawing.Point(214, 158);
-            this.player1.Minutes = -120;
+            this.player1.Minutes = -180;
             this.player1.Name = "player1";
+            this.player1.Paused = false;
             this.player1.Seconds = 0;
             this.player1.Size = new System.Drawing.Size(172, 60);
             this.player1.TabIndex = 0;
@@ -71,15 +73,16 @@
             "18",
             "19",
             "20"});
-            this.cbFrecuency.Location = new System.Drawing.Point(12, 94);
+            this.cbFrecuency.Location = new System.Drawing.Point(12, 51);
             this.cbFrecuency.Name = "cbFrecuency";
             this.cbFrecuency.Size = new System.Drawing.Size(121, 21);
             this.cbFrecuency.TabIndex = 1;
+            this.cbFrecuency.SelectedIndex = 0;
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(9, 78);
+            this.lblTime.Location = new System.Drawing.Point(9, 35);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(103, 13);
             this.lblTime.TabIndex = 2;
@@ -87,7 +90,7 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(12, 34);
+            this.btnOpen.Location = new System.Drawing.Point(12, 94);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(121, 23);
             this.btnOpen.TabIndex = 5;
@@ -104,11 +107,20 @@
             this.pbImages.TabIndex = 6;
             this.pbImages.TabStop = false;
             // 
+            // lblDirectorySelected
+            // 
+            this.lblDirectorySelected.AutoSize = true;
+            this.lblDirectorySelected.Location = new System.Drawing.Point(12, 131);
+            this.lblDirectorySelected.Name = "lblDirectorySelected";
+            this.lblDirectorySelected.Size = new System.Drawing.Size(0, 13);
+            this.lblDirectorySelected.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 236);
+            this.Controls.Add(this.lblDirectorySelected);
             this.Controls.Add(this.pbImages);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.lblTime);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.PictureBox pbImages;
+        private System.Windows.Forms.Label lblDirectorySelected;
     }
 }
 
