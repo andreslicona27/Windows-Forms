@@ -43,6 +43,7 @@
             // EtiquetaAviso
             // 
             this.Size = new System.Drawing.Size(335, 167);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Click);
             this.ResumeLayout(false);
 
         }

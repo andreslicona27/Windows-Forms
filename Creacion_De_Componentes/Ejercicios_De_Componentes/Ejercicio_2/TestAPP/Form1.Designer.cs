@@ -28,47 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.etiquetaAviso1 = new Ejercicio_2.EtiquetaAviso();
-            this.etiquetaAviso2 = new Ejercicio_2.EtiquetaAviso();
+            this.ea = new Ejercicio_2.EtiquetaAviso();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // etiquetaAviso1
+            // ea
             // 
-            this.etiquetaAviso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.etiquetaAviso1.GFinal = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.etiquetaAviso1.GInitial = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.etiquetaAviso1.Gradient = true;
-            this.etiquetaAviso1.ImageMarca = global::TestAPP.Properties.Resources.animal;
-            this.etiquetaAviso1.Location = new System.Drawing.Point(21, 35);
-            this.etiquetaAviso1.Marca = Ejercicio_2.eMarca.ImagenMarca;
-            this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(172, 60);
-            this.etiquetaAviso1.TabIndex = 2;
-            this.etiquetaAviso1.Text = "Hola";
-            this.etiquetaAviso1.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);
+            this.ea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ea.GFinal = System.Drawing.Color.PaleGreen;
+            this.ea.GInitial = System.Drawing.Color.Plum;
+            this.ea.Gradient = true;
+            this.ea.ImageMarca = null;
+            this.ea.Location = new System.Drawing.Point(12, 12);
+            this.ea.Marca = Ejercicio_2.eMarca.Cruz;
+            this.ea.Name = "ea";
+            this.ea.Size = new System.Drawing.Size(76, 18);
+            this.ea.TabIndex = 1;
+            this.ea.Text = "Mensaje";
+            this.ea.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);
             // 
-            // etiquetaAviso2
+            // comboBox1
             // 
-            this.etiquetaAviso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.etiquetaAviso2.GFinal = System.Drawing.Color.PaleGreen;
-            this.etiquetaAviso2.GInitial = System.Drawing.Color.Plum;
-            this.etiquetaAviso2.Gradient = true;
-            this.etiquetaAviso2.ImageMarca = null;
-            this.etiquetaAviso2.Location = new System.Drawing.Point(21, 144);
-            this.etiquetaAviso2.Marca = Ejercicio_2.eMarca.Cruz;
-            this.etiquetaAviso2.Name = "etiquetaAviso2";
-            this.etiquetaAviso2.Size = new System.Drawing.Size(76, 18);
-            this.etiquetaAviso2.TabIndex = 1;
-            this.etiquetaAviso2.Text = "Mensaje";
-            this.etiquetaAviso2.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(206, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.etiquetaAviso1);
-            this.Controls.Add(this.etiquetaAviso2);
+            this.ClientSize = new System.Drawing.Size(510, 256);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ea);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -77,8 +71,8 @@
 
         #endregion
 
-        private Ejercicio_2.EtiquetaAviso etiquetaAviso2;
-        private Ejercicio_2.EtiquetaAviso etiquetaAviso1;
+        private Ejercicio_2.EtiquetaAviso ea;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -29,20 +29,16 @@ namespace Ejercicio_2
             InitializeComponent();
         }
 
+        private Rectangle area;
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            int grosor = 0; //Grosor de las líneas de dibujo
-            int offsetX = 0; //Desplazamiento a la derecha del texto
-            int offsetY = 0; //Desplazamiento hacia abajo del texto
-                             // Altura de fuente, usada como referencia en varias partes
+            int grosor = 0; 
+            int offsetX = 0; 
+            int offsetY = 0; 
             int h = this.Font.Height;
-            //Esta propiedad provoca mejoras en la apariencia o en la eficiencia
-            // a la hora de dibujar
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            //Dependiendo del valor de la propiedad marca dibujamos una
-            //Cruz o un Círculo
             if (Gradient)
             {
                 LinearGradientBrush l = new LinearGradientBrush(
@@ -63,6 +59,7 @@ namespace Ejercicio_2
                     h, h);
                     offsetX = h + grosor;
                     offsetY = grosor;
+                    area = new Rectangle(grosor, grosor, h + grosor + grosor /2, h + grosor + grosor / 2);
                     break;
                 case eMarca.Cruz:
                     grosor = 3;
@@ -71,19 +68,18 @@ namespace Ejercicio_2
                     g.DrawLine(lapiz, h, grosor, grosor, h);
                     offsetX = h + grosor;
                     offsetY = grosor / 2;
-                    //Es recomendable liberar recursos de dibujo pues se
-                    //pueden realizar muchos y cogen memoria
                     lapiz.Dispose();
+                    area = new Rectangle(grosor, grosor, h, h);
                     break;
                 case eMarca.ImagenMarca:
                     if (imagenMarca != null)
                     {
-                        g.DrawImage(ImageMarca, new Rectangle(0, 0, this.FontHeight, this.FontHeight));
+                        g.DrawImage(ImageMarca, new Rectangle(0, 0, h, h));
+                        area = new Rectangle(grosor, grosor, h, h);
                     }
                     break;
             }
 
-            //Finalmente pintamos el Texto; desplazado si fuera necesario
             SolidBrush b = new SolidBrush(this.ForeColor);
             if (Marca == eMarca.ImagenMarca && ImageMarca != null)
             {
@@ -186,23 +182,19 @@ namespace Ejercicio_2
 
         [Category("Appearance")]
         [Description("It launches when the user makes a click in the mark")]
-        public event System.EventHandler ClickEnMarca;
+        public event EventHandler ClickEnMarca;
 
-        protected virtual void OnClickEnMarca(EventArgs e)
+        private void Click(object sender, MouseEventArgs e)
         {
-            if (ClickEnMarca != null)
+            if (marca != eMarca.Nada)
             {
-                ClickEnMarca(this, e);
+                if (e.X >= area.X && e.Y >= area.Y && e.X <= area.Width && e.Y <= area.Height)
+                {
+                    ClickEnMarca?.Invoke(this, EventArgs.Empty);
+                }
             }
         }
 
-        protected override void OnMouseClick(MouseEventArgs e)
-        {
-            base.OnMouseClick(e);
-            if (e.X <= this.FontHeight)
-            {
-                this.OnClickEnMarca(EventArgs.Empty);
-            }
-        }
+    
     }
 }
