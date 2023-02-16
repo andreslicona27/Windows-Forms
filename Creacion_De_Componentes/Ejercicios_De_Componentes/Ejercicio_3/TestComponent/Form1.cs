@@ -15,15 +15,22 @@ namespace TestComponent
 {
     public partial class Form1 : Form
     {
-        
+        Timer timer = new Timer();
         public Form1()
         {
             InitializeComponent();
+            timer = new Timer();
+            timer.Tick += new EventHandler(timer_function);
+
+            for(int i = 0; i <= 20; i++)
+            {
+                cbFrecuency.Items.Add(i);
+            }
         }
 
         private void player1_DesbordaTiempo(object sender, EventArgs e)
         {
-            player1.Seconds++;
+            player1.Minutes += 1;
         }
 
 
@@ -68,13 +75,11 @@ namespace TestComponent
                 {
                     MessageBox.Show("An error ocurred in the selection of the directory", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
         }
 
 
-        Timer timer = new Timer();
-        int contImage = 0;
+        
         private void player1_PlayClick(object sender, EventArgs e)
         {
             if (player1.Paused)
@@ -83,25 +88,24 @@ namespace TestComponent
             }
             else
             {
-                timer.Interval = 1000;
-                contImage = (cbFrecuency.SelectedIndex + 1) * 1000;
-                timer.Tick += new EventHandler(ImageChange);
                 timer.Start();
             }
         }
 
         int showingImage = 0;
-        private void ImageChange(object sender, EventArgs e)
+        private void timer_function(object sender, EventArgs e)
         {
-            if (images != null)
+            player1.Seconds += 1;
+            if(showingImage < images.Length)
             {
-                if (showingImage < images.Length)
-                {
-                    pbImages.Image = images[showingImage];
-                }
+                pbImages.Image = images[showingImage];
                 showingImage++;
             }
-            player1.TimeUpdate();
+        }
+
+        private void cbFrecuency_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            timer.Interval = int.Parse(cbFrecuency.SelectedItem.ToString()) * 1000;
         }
     }
 }

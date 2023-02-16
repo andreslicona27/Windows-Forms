@@ -52,32 +52,12 @@
             // cbFrecuency
             // 
             this.cbFrecuency.FormattingEnabled = true;
-            this.cbFrecuency.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
             this.cbFrecuency.Location = new System.Drawing.Point(12, 51);
             this.cbFrecuency.Name = "cbFrecuency";
             this.cbFrecuency.Size = new System.Drawing.Size(121, 21);
             this.cbFrecuency.TabIndex = 1;
-            this.cbFrecuency.SelectedIndex = 0;
+            this.cbFrecuency.Text = "1";
+            this.cbFrecuency.SelectedIndexChanged += new System.EventHandler(this.cbFrecuency_SelectedIndexChanged);
             // 
             // lblTime
             // 

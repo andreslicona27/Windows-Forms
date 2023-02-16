@@ -40,20 +40,20 @@ namespace Ejercicio_3
         {
             set
             {
-                seconds = value;
                 if (value < 0)
                 {
                     throw new ArgumentException();
                 }
-                else if (seconds > 59)
+                else if (value > 59)
                 {
                     seconds = value % 60;
                     DesbordaTiempo(this, EventArgs.Empty);
                 }
-                else if (minutes > 59)
+                else 
                 {
-                    value = 0;
+                    seconds = value;
                 }
+                TimeUpdate();
             }
             get
             {
@@ -68,18 +68,15 @@ namespace Ejercicio_3
         {
             set
             {
-                if (minutes < 0)
+                if (value < 0)
                 {
                     throw new ArgumentException();
                 }
-                else if (minutes >= 60)
+                else 
                 {
-                    minutes = value - 60;
+                    minutes = value < 59 ? value : 0;
                 }
-                else
-                {
-                    minutes = value;
-                }
+                TimeUpdate();
             }
             get
             {
@@ -115,7 +112,6 @@ namespace Ejercicio_3
         public void TimeUpdate()
         {
             lblTime.Text = String.Format("{0:D2}:{1:D2}", Minutes, Seconds);
-            Seconds++;
         }
 
     }
